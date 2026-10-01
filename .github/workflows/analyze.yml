@@ -1,0 +1,28 @@
+name: Market Analysis
+
+on:
+  workflow_dispatch:
+
+jobs:
+
+  analyze:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run tests
+        run: |
+          python -m unittest discover -s tests -v
+
+      - name: Run market analyzer
+        run: |
+          python -m src.main
