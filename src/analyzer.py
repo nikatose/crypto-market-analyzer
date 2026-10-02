@@ -35,11 +35,15 @@ def calculate_returns(closes):
 
 
 def analyze(candles):
-    if not candles:
-        raise ValueError(
-            "No candle data available."
-        )
+if not candles:
+    raise ValueError(
+        "No candle data available."
+    )
 
+if len(candles) < 2:
+    raise ValueError(
+        "At least two candles are required."
+    )
     closes = [
         candle["close"]
         for candle in candles
