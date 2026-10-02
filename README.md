@@ -17,6 +17,17 @@ The project fetches public OHLCV market data and calculates basic market statist
 - GitHub Actions
 - Zero third-party runtime dependencies
 
+## Market Summary
+
+The analyzer provides a compact overview of recent market conditions including:
+
+- Price movement
+- Trading range
+- Average price
+- Trading volume
+- Return volatility
+- Market movement classification
+
 ## Project Structure
 
 ```text
