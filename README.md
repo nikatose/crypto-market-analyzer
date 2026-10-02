@@ -28,6 +28,17 @@ The analyzer provides a compact overview of recent market conditions including:
 - Return volatility
 - Market movement classification
 
+## Roadmap
+
+- [x] OHLCV market data
+- [x] Price statistics
+- [x] Volatility analysis
+- [x] Unit tests
+- [x] GitHub Actions
+- [ ] Multi-asset comparison
+- [ ] CSV export
+- [ ] Historical charts
+
 ## Project Structure
 
 ```text
