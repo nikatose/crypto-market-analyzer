@@ -109,12 +109,27 @@ def main():
         f"{result['volatility_percent']:.2f}%"
     )
 
-    print("-" * 55)
+print("-" * 55)
 
-    print(
-        f"Trend:            {trend}"
-    )
+print("MARKET SUMMARY")
+print()
 
+print(
+    f"Trend:            {trend}"
+)
+
+print(
+    f"Volatility level: {volatility_label}"
+)
+
+print(
+    f"Price range:      "
+    f"{money(result['lowest_price'])}"
+    f" - "
+    f"{money(result['highest_price'])}"
+)
+
+print("-" * 55)
     print(
         f"Volatility level: {volatility_label}"
     )
